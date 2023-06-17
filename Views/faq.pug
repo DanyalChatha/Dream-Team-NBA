@@ -1,0 +1,75 @@
+extends layout 
+
+block layout-content
+  body
+      h1 Frequently Asked Questions!
+
+      .faq-container
+        .faq-item
+          .question Q: What is the objective of this game?
+          .answer A: The objective is to make a team consisting of five players and play against your friends to see who is the better general manager.
+
+        .faq-item
+          .question Q: Are there only active players?
+          .answer A: At this moment in time, we only use current active players in the NBA.
+
+        .faq-item
+          .question Q: Is the application free?
+          .answer A: Yes, the application is free to use.
+      
+        .faq-item
+          .question Q: Is there other sports?
+          .answer A: No, we currently are only working with the NBA.
+
+        .faq-item
+          .question Q: What is the NBA?
+          .answer A: The NBA is short for the National Basketball Association.
+
+
+      style.
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+        h1 {
+          text-align: center;
+          margin-bottom: 20px;
+          color: black;
+          font-family: 'Tilt Prism', cursive;
+          font-size: 35px;
+        }
+
+        .faq-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .faq-item {
+          margin-bottom: 35px;
+          background-color: aliceblue;
+          width: 50%;
+        }
+
+        .question {
+          font-family: 'Raleway', sans-serif;
+          font-weight: bold;
+          font-size: 19px;
+          padding: 5px;
+          color: black;
+          border: solid 2px black;
+        }
+
+        .answer {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 16px;
+          margin-top: 5px;
+          padding: 5px;
+          color: black;
+        }
+
+        body{
+          background-color: rgb(254, 191, 0);
+          margin: 0;
+        }
